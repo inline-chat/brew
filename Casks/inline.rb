@@ -12,6 +12,8 @@ cask "inline" do
 
   binary "inline"
 
+  zap trash: "~/.local/share/inline"
+
   livecheck do
     url "https://github.com/inline-chat/inline/releases"
     regex(/^cli-v(\d+(?:\.\d+)+)$/i)
