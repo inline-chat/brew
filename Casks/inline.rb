@@ -13,8 +13,8 @@ cask "inline" do
 
   on_linux do
     arch arm: "aarch64", intel: "x86_64"
-    sha256 arm:   "e9f57fe5b5f14e496341d9a69f7c8fd78990430207341de74f2fb2ff27918ec2",
-       intel: "83fffbe7da27974b911c3391da39de3e4777720078fbb549085244be7d9fa463"
+    sha256 arm64_linux:  "e9f57fe5b5f14e496341d9a69f7c8fd78990430207341de74f2fb2ff27918ec2",
+           x86_64_linux: "83fffbe7da27974b911c3391da39de3e4777720078fbb549085244be7d9fa463"
     url "https://github.com/inline-chat/inline/releases/download/cli-v#{version}/inline-cli-#{version}-#{arch}-unknown-linux-gnu.tar.gz",
         verified: "github.com/inline-chat/inline/"
   end
