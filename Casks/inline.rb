@@ -1,20 +1,20 @@
 cask "inline" do
-  version "0.7.13"
+  version "0.7.14"
   name "Inline CLI"
   desc "Command-line client for work chat"
   homepage "https://inline.chat/"
 
   on_macos do
     depends_on arch: :arm64
-    sha256 "47af4ed4b79c748e2f2f42e35bdefe8ae5d16e227b4df918e71f6ecf2c6f9dc9"
+    sha256 "fc1e78f5d100cd77016d2f3e0792ffe921663620345a718cff72f594fc4aa7d1"
     url "https://github.com/inline-chat/inline/releases/download/cli-v#{version}/inline-cli-#{version}-aarch64-apple-darwin.tar.gz",
         verified: "github.com/inline-chat/inline/"
   end
 
   on_linux do
     arch arm: "aarch64", intel: "x86_64"
-    sha256 arm64_linux:  "6869fb0b11a440781cde9e533e2b1f0dfc1c7696ef997411f6318218b2f22504",
-           x86_64_linux: "b0114a7c0e963b2144d2b9a8366617236bb4d9892bfeac395c51e8a1ba4bc318"
+    sha256 arm64_linux:  "0b9e6352466f4a4a4419060fa3548e76617f1fa3e07c22a7ea1411c4c50e9560",
+           x86_64_linux: "f62cb24ba7058ad8448457e98f35c789d454e8b3e0f309c83166ffd9af92ee2f"
     url "https://github.com/inline-chat/inline/releases/download/cli-v#{version}/inline-cli-#{version}-#{arch}-unknown-linux-gnu.tar.gz",
         verified: "github.com/inline-chat/inline/"
   end
